@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter Tight', sans-serif;
+    transition: background 0.2s linear;
+    background: #dbdbdb;
+}
+
+body.dark {
+    background: rgb(26, 26, 26);
+    transition: background 0.2s linear;
+    color: #f5f5f5;
+}
+
+/* Header e botão mudar de tema*/
+
+header {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.checkbox {
+    opacity: 0;
+}
+
+.label {
+    background: #111;
+    border-radius: 50px;
+    right: 4%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding: 3px;
+    height: 1rem;
+    width: 2rem;
+    transform: scale(1.5);
+}
+
+.label .ball {
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    height: 1rem;
+    width: 1rem;
+    transform: translateX(0px);
+    transition: transform 0.2s linear;
+}
+  
+.checkbox:checked + .label .ball {
+    transform: translateX(17px);
+}
+  
+.fa-moon {
+    font-size: small;
+    color: #f1c40f;
+}
+  
+.fa-sun {
+    font-size: small;
+    color: #f39c12;
+}
+
+  /* Parte principal (main) */
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 75vh;
+}
+
+.album img {
+    width: 20rem;
+}
+
+figcaption {
+    text-align: center;
+    font-weight: bolder;
+    letter-spacing: 2px;
+}
+
+  /* Tabela dentro do conteúdo principal*/
+
+  table {
+    border-collapse: collapse;
+    background-color: #515859;
+    transition: 300ms;
+  }
+
+  caption {
+    padding: 5px;
+    background-color: #515859;
+  }
+
+  table tr:hover {
+    background: #592202;
+    color: #f5f5f5;
+    transition: 300ms;
+  }
+
+  table tr td {
+    padding: 15px;
+  }
+
+  /* Colorir estrelas */
+
+  .fa-star, .fa-star-half {
+    color: #f1c40f;
+  }
+
+  /* Seção de nota geral */
+
+.geral {
+    text-align: center;
+    height: 5vh;
+    font-size: x-large;
+}
+
+  /* Footer (final do código) */
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+}
+
+footer a {
+    text-decoration: none;
+    color: #f5f5f5;
+    background-color: #592202;
+    padding: 5px 10px;
+    margin: 0px 5px;
+    border: 2px solid transparent;
+    transition: 300ms;
+}
+
+footer a:hover {
+    text-decoration: none;
+    color: #111;
+    background-color: #8C5B30;
+    padding: 5px 10px;
+    margin: 0px 5px;
+    border: 2px solid #111;
+    transition: 300ms;
+}
+
+/* responsividade */
+ @media screen and (max-width: 600px) {
+
+    header {
+        width: 100%;
+        height: 8vh;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: max-content;
+        justify-content: center;
+        justify-items: center;
+        align-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 1% 0%;
+    }
+
+    figure {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    figcaption {
+        padding: 5px;
+    }
+
+    .album img {
+        width: 13rem;
+    }
+
+    table {
+        margin: 1% 0%;
+    }
+    
+      caption {
+        padding: 5px;
+        background-color: #515859;
+      }
+    
+      table tr td {
+        padding: 10px;
+      }
+
+      .geral {
+        text-align: center;
+        font-size: x-large;
+        height: max-content;
+        margin: 2% 0%;
+    }
+    
+
+    footer {
+        display: flex;
+        margin: 4% 0%;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: max-content;
+    }
+ }
+
+ @media screen and (max-width: 600px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: max-content;
+        justify-content: center;
+        justify-items: center;
+        align-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 1% 0%;
+    }
+
+    figure {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+ }
+
+ /* Future */

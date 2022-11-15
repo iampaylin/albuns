@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Main */
+main {
+    font-family: 'Montserrat', sans-serif;
+    height: 90vh;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #CED4DA;
+}
+
+/* Title main*/
+.title {
+    font-size: 300%;
+    font-weight: bolder;
+}
+
+/* Álbum em destaque main*/
+.destaque {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.destaque h2 {
+    padding: 10px;
+}
+
+.destaque img {
+    width: 20rem;
+}
+
+/* section */
+section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 20px;
+    background-color: #ADB5BD;
+}
+
+/* Divisão de álbuns*/
+section div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* estrutura dos links */
+.album {
+    font-family: 'Montserrat', sans-serif;
+    width: 20rem;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: transparent;
+    text-decoration: none;
+    margin: 15px;
+    transition: 300ms;
+}
+
+.album img {
+    width: 250px;
+}
+
+.album p {
+    color: #000;
+    font-size: 130%;
+}
+
+/* footer */
+footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #CED4DA;
+}
+
+/* redes sociais */
+.icon {
+    width: 30px;
+    margin: 10px 20px;
+    font-size: 190%;
+    background-color: #000;
+    padding: 10px;
+    border-radius: 100%;
+}
+
+/* Cores links */
+.instagram {
+    color: #C13584;
+    transition: 300ms;
+}
+
+.instagram:hover {
+    color: #000;
+    background-color: #C13584;
+    transition: 300ms;
+}
+
+.github {
+    color: #FFF;
+    transition: 300ms;
+}
+
+.github:hover {
+    color: #000;
+    background-color: #FFF;
+    transition: 300ms;
+}
+
+.linkedin {
+    color: #0e76a8;
+    transition: 300ms;
+}
+
+.linkedin:hover {
+    color: #000;
+    background-color: #0e76a8;
+    transition: 300ms;
+}
+
+.twitter {
+    color: #1DA1F2;
+    transition: 300ms;
+}
+
+.twitter:hover {
+    color: #000;
+    background-color: #1DA1F2;
+    transition: 300ms;
+}
+
+@media screen and (max-width: 585px) {
+    main {
+        font-family: 'Montserrat', sans-serif;
+        height: 90vh;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: #CED4DA;
+    }
+}
+
+@media screen and (max-width: 371px) {
+    main {
+        font-family: 'Montserrat', sans-serif;
+        height: max-content;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .title {
+        font-size: 120%;
+        font-weight: bolder;
+    }
+
+    .destaque img {
+        width: 10rem;
+    }
+
+    .album {
+        font-family: 'Montserrat', sans-serif;
+        width: 13rem;
+        height: 13rem;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: transparent;
+        text-decoration: none;
+        margin: 10px;
+        transition: 300ms;
+    }
+    
+    .album img {
+        width: 10rem;
+    }
+    
+    .album p {
+        color: #000;
+        font-size: 100%;
+    }
+
+    .icon {
+        width: 15px;
+        height: 15px;
+        margin: 10px 20px;
+        font-size: 200%;
+        background-color: #000;
+        padding: 10px;
+        border-radius: 20px;
+    }
+
+}
+ 
+@media screen and (max-width: 299px) {
+
+    .destaque h2 {
+        padding: 5px;
+    }
+
+    .icon {
+        width: 10px;
+        height: 10px;
+        margin: 10px 20px;
+        font-size: 200%;
+        background-color: #000;
+        padding: 10px;
+        border-radius: 20px;
+    }
+}
