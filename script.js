@@ -61,3 +61,21 @@ pararaio.addEventListener ("mouseleave", () => {
     pararaioTitle.style.color = '#000'
     pararaioTitle.style.transition = '300ms'
 })
+
+// Manual de como amar errado
+var manualDeComoAmarErrado = document.getElementById("manualDeComoAmarErrado")
+var manualWiu = document.getElementById("manualWiu")
+manualWiu.style.fontSize = '100%'
+manualWiu.style.fontWeight = 'bolder'
+manualDeComoAmarErrado.addEventListener("mouseover", () => {
+    manualDeComoAmarErrado.style.transition = '300ms'
+    manualDeComoAmarErrado.style.background = '#C6D7E0'
+    manualWiu.style.color = '#000'
+    manualWiu.style.transition = '300ms'
+})
+manualDeComoAmarErrado.addEventListener("mouseleave", () => {
+    manualDeComoAmarErrado.style.transition = '300ms'
+    manualDeComoAmarErrado.style.background = 'transparent'
+    manualWiu.style.color = '#000'
+    manualWiu.style.transition = '300ms'
+})
